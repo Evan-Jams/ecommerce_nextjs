@@ -19,6 +19,8 @@ export default async function SetupLayout({
         }
     });
 
+    const billboard = prismadb.billboard
+
     if (store) {
         redirect(`/${store.id}`);
     }
